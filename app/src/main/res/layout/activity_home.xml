@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.avinashiyer.bhaukaal.activities.HomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/exit_icon"
+        android:id="@+id/exit2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/stadiumRelativeLayout"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="420dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:id="@+id/stadiumLinearLayoutTop">
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnWidth="25dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="0dp"
+                    android:horizontalSpacing="1dp"
+                    android:stretchMode="columnWidth"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:id="@+id/gridviewTop"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="82dp"
+                android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:orientation="vertical"
+                        android:id="@+id/stadiumLinearLayoutLeft"
+                        android:layout_height="match_parent">
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:columnWidth="25dp"
+                            android:numColumns="auto_fit"
+                            android:verticalSpacing="0dp"
+                            android:horizontalSpacing="0dp"
+                            android:stretchMode="columnWidth"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:id="@+id/gridviewLeft"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginEnd="18dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/stadium_gators"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/stadiumLinearLayoutRight">
+
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:columnWidth="25dp"
+                            android:numColumns="auto_fit"
+                            android:verticalSpacing="0dp"
+                            android:horizontalSpacing="0dp"
+                            android:stretchMode="columnWidth"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:id="@+id/gridviewRight"/>
+                    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:layout_marginTop="200dp"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/stadiumLinearLayoutBottom">
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnWidth="25dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="0dp"
+                    android:horizontalSpacing="1dp"
+                    android:stretchMode="columnWidth"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:id="@+id/gridviewBottom"/>
+            </LinearLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/exit_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/exit2"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/exit1" />
+
+
+
+
+</RelativeLayout>
